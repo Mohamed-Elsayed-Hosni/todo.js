@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>To do List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body> 
+<div class="Logo">
+<h1>
+To Do Listing
+</h1>
+</div>
+<div class="list">
+<form class="ToDo" id="ToDo">
+<p class="ERROROFF" id="MSG">
+
+</p>
+<p>Input the task you want to be reminded of</p>
+<input type="text" id="taskname">
+<input type="submit" id="submit">
+</form>
+<aside id="All">
+    <h2 style="border: 2px inset rgb(62,62,62); width:75%; justify-self: center;">
+    All
+    </h2>
+    <ul id="AllList"></ul>
+</aside>
+<aside id="Completed">
+    <h2 style="border: 2px inset rgb(62,62,62); width:75%; justify-self: center;">
+    Completed
+    </h2>
+    <ul id="CompletedList"></ul>
+</aside>
+<aside id="Pending">
+    <h2 style="border: 2px inset rgb(62,62,62); width:75%; justify-self: center;">
+    Pending
+    </h2>
+    <ul id="PendingList"></ul>
+</aside>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

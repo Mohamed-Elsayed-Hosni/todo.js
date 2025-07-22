@@ -1,0 +1,177 @@
+
+body{
+    background-image: url("Banner.jpeg");
+   background-repeat:no-repeat;
+   background-size: 100% 100%;
+    background-attachment: fixed;
+   height:fit-content;
+    min-height: 860px;
+   width:100%;
+    margin:0px;
+    padding:0px;
+    display:grid;
+    grid-template-columns: 
+    minmax(5vw,1fr)
+    repeat(10,1fr)
+    minmax(5vw,1fr);
+    
+    grid-template-rows:
+    80px
+    30px
+    repeat(16,1fr)
+    30px;
+}
+h2{
+    text-align: center;
+    flex-basis: 100%;
+}
+section.Announcement{
+    border:1vw  solid black;
+    width: 70%;
+}
+div.list{
+        min-height: 850px;
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    background-color: white;
+    grid-row-start: 2;
+    grid-row-end:20;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+nav.Search{
+    display:flex;
+    position:sticky;
+    top: 0px;
+    align-items:center;
+    justify-content:space-evenly;
+    justify-self: center;
+    height:30px;
+    width: 100vw;
+    background-image: url("NavBarBack.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    grid-column-start: 1;
+    grid-column-end: 17;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-color:black;
+    border: 1px;
+}
+input[type=text]{
+    min-width: fit-content;
+    padding: 2px;
+    margin: 10px;
+    width: 20%;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    transition: width 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+input[type=submit]{
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  width: 25%;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: width 0.4s ease-in-out, font-size 0.4s ease-in-out;
+}
+input[type=submit]:hover{
+width:50%;
+font-size:30px;
+}
+input[type=text]:focus{
+    background-color: lightblue;
+    width: 100%;
+}
+form.ToDo{
+    width: 50%;
+    padding: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+    border: 10px ridge blueviolet ;
+    display:flex;
+    background-color: white;
+    height: fit-content;
+    max-height: fit-content;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+p.ERROROFF{
+    text-align: center;
+    justify-self: center;
+    color: rgb(0,0,128);
+}
+p.ERRORON{
+    text-align: center;
+    justify-self: center;
+    color: rgb(128,0,0);
+}
+aside.Services{
+    background-image: url("ServiceBar.jpg");
+    width: 20%;
+    justify-items: center;
+    align-content: space-between;
+}
+nav.Contact{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    justify-self: center;
+    height:30px;
+    width: 100vw;
+    background-image: url("NavBarBack.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    grid-column-start: 1;
+    grid-column-end: 17;
+    grid-row-start: 19;
+    grid-row-end: 21;
+    border-color:black;
+    border: 1px;
+}
+a.Navigation{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(214, 64, 64);
+    text-decoration-line: none;
+}
+a:hover{
+    color:rgb(128,0,0);
+}
+.Logo{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url("HeaderBack1.jpg");
+    width:100vw;
+    height: 80px;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end: 17;
+}
+aside{
+    width:25%;
+    border: 5px inset rgb(244,1,5);
+    margin:3%;
+    align-self: flex-start;
+    
+}
+ul {list-style-type: circle;}
+li.DONE{text-decoration: line-through;}
